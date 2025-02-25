@@ -1,6 +1,5 @@
 "use client";
 
-import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -10,59 +9,6 @@ interface DataType {
   name: string;
   imgUrl: string;
 }
-/*
-{
-    "id": 1,
-    "name": "bulbasaur",
-    "height": 7,
-    "weight": 69,
-    "image": {
-        "png": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-        "svg": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
-    },
-    "stats": [
-        {
-            "name": "hp",
-            "baseStat": 45
-        },
-        {
-            "name": "attack",
-            "baseStat": 49
-        },
-        {
-            "name": "defense",
-            "baseStat": 49
-        },
-        {
-            "name": "special-attack",
-            "baseStat": 65
-        },
-        {
-            "name": "special-defense",
-            "baseStat": 65
-        },
-        {
-            "name": "speed",
-            "baseStat": 45
-        }
-    ],
-    "types": [
-        {
-            "slot": 1,
-            "name": "grass",
-            "typeId": "12"
-        },
-        {
-            "slot": 2,
-            "name": "poison",
-            "typeId": "4"
-        }
-    ],
-    "moves": [
-        "razor-wind",
-        "swords-dance"
-    ]
-},*/
 
 const Pokemon = () => {
   const [data, setData] = useState<DataType[]>([]);
@@ -124,7 +70,7 @@ const Pokemon = () => {
             width={32}
             height={32}
           />
-          <Image src={`/pokedex.svg`} alt="로고" width={150} height={32} />
+          <Image src={`/logo.svg`} alt="로고" width={150} height={32} />
         </div>
 
         <div className="flex flex-1 gap-4 mb-3 items-center">
