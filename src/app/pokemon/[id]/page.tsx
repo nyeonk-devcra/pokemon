@@ -58,17 +58,17 @@ export default async function PokemonDetailPage({
             <span className="py-2">
               {(statsData.weight * 0.1).toFixed(2)} kg
             </span>
-            <span className="text-gray-500 text-sm">Weight</span>
+            <span className="text-gray-500 text-sm">무게</span>
           </div>
           <div className="flex flex-1 flex-col items-center">
             <span className="py-2">
               {(statsData.height * 0.1).toFixed(2)} m
             </span>
-            <span className="text-gray-500 text-sm">Height</span>
+            <span className="text-gray-500 text-sm">높이</span>
           </div>
           <div className="flex flex-1 flex-col items-center border-l">
             <span className="py-2">-</span>
-            <span className="text-gray-500 text-sm">Moves</span>
+            <span className="text-gray-500 text-sm">스킬</span>
           </div>
         </div>
 
